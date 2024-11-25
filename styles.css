@@ -1,0 +1,234 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.section.hero {
+    display: flex;
+    background-color: black; /* Black background */
+    color: white; /* White font color */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between image and text */
+    padding: 20px; /* Add some padding */
+}
+
+.hero-content img {
+    max-width: 50%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero-text {
+    max-width: 45%; /* Adjust text width */
+}
+
+.hero-text h1 {
+    font-size: 2.5em; /* Adjust heading size */
+}
+
+.hero-text p {
+    font-size: 1.2em; /* Adjust paragraph size */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    line-height: 1.5; /* Adjust line height */
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Blue background */
+    color: white; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+
+}
+    /* Add hover effect to the button */
+    &:hover {
+        background-color: #333; /* Blue background on hover */
+        color: white; /* White text color on hover */
+    }
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.about-profile img {
+    width: 150px;               /* Set the width of the image */
+    height: 150px;              /* Set the height to match the width for a perfect circle */
+    border-radius: 50%;         /* Make the image round */
+    object-fit: cover;          /* Ensure the image covers the entire area without distortion */
+}
+.about-profile, .about-text {
+    flex: 1;
+    text-align: left;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #333; /* Default color for icons */
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .social-media a:hover {
+    background-color: black; /* Hover background color */
+    color: #fff; /* Hover text color */
+  }
+  
+  .social-media a::before {
+    content: ""; /* Placeholder for icons */
+    margin-right: 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .social-media a[href*="facebook.com"]::before {
+    background-image: url("icons/bxl-facebook.svg"); 
+  }
+  
+  
+  
+  .social-media a[href*="instagram.com"]::before {
+    background-image: url("icons/bxl-instagram.svg"); 
+  }
+  
+  .social-media a[href*="linkedin.com"]::before {
+    background-image: url("icons/bxl-linkedin.svg"); 
+    }
+  
+  
+  
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+
+.contact-contentf {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between icons */
+}
+
+/* Remove transitions and hover effects */
+.social-media a:hover {
+    color: white; /* Keep icon color white on hover */
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
